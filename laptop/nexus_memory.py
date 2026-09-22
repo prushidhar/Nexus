@@ -38,7 +38,7 @@ class NexusMemory:
             "created_at": datetime.now().isoformat()
         })
         self.project_context: Dict[str, Any] = self._load_json(PROJECT_FILE, default={
-            "active_project": "Nexus Jarvis",
+            "active_project": "Nexus AI Companion",
             "recent_tasks": [],
             "last_active": datetime.now().isoformat()
         })

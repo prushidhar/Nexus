@@ -2,7 +2,7 @@
 NEXUS MULTI-PERSONA "CLICKYS" ARCHITECTURE (SEPTEMBER 2026 ENGINE)
 Implements HeyClicky Workflow #16 (Named Specialized Clickys).
 Provides dynamic switching between specialized companions:
-- Jarvis (Executive Companion / Desktop Automation)
+- Nexus (Executive Companion / Desktop Automation)
 - Coder (Software Engineering & Terminal Expert)
 - Teacher (Visual UI Walkthrough & Screen Guide)
 - Researcher (Deep Synthesis & Knowledge Vault Analyst)
