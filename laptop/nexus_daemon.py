@@ -34,10 +34,7 @@ from datetime import datetime
 import numpy as np
 import psutil
 import pyaudio
-import scipy.signal
 import speech_recognition as sr
-from openwakeword.model import Model as OWWModel
-
 # Configure logging to disk
 CURRENT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = CURRENT_DIR.parent
@@ -82,9 +79,11 @@ threading.excepthook = handle_thread_exception
 
 sys.path.insert(0, str(CURRENT_DIR))
 
-from jarvis_tools import JarvisTools
-from jarvis_voice import JarvisTTS, get_best_audio_input
-from jarvis_brain import JarvisBrain
+from nexus_tools import NexusTools, JarvisTools
+from nexus_voice import NexusTTS, get_best_audio_input
+JarvisTTS = NexusTTS
+from nexus_brain import NexusBrain
+JarvisBrain = NexusBrain
 from clicky_bridge import clicky
 from nexus_routines import routines
 from nexus_dictation import dictation
@@ -97,8 +96,8 @@ class NexusBackgroundDaemon:
     """Continuous background voice assistant daemon for Windows."""
 
     def __init__(self):
-        self.tts = JarvisTTS(rate=175, volume=1.0)
-        self.brain = JarvisBrain(use_llm=True)
+        self.tts = NexusTTS(rate=175, volume=1.0)
+        self.brain = NexusBrain(use_llm=True)
         self.recognizer = sr.Recognizer()
 
         self.dev_index, self.dev_rate, self.dev_name = get_best_audio_input()
@@ -248,17 +247,24 @@ class NexusBackgroundDaemon:
             else:
                 # Single tap: expand notch and listen for command
                 def _trigger_single():
-                    logger.info("[PHYSICAL HOTKEY TRIGGERED] Windows + Alt pressed!")
+                    logger.info("[PHYSICAL HOTKEY TRIGGERED] Hotkey pressed!")
                     clicky.expand_notch()
+                    clicky.set_stage("listening", "Listening...")
+                    try:
+                        winsound.Beep(1200, 80)
+                    except Exception:
+                        pass
                     self._handle_wake_event(command="")
 
                 press_timer[0] = threading.Timer(0.35, _trigger_single)
                 press_timer[0].start()
 
-        # Engine 1: Low-level keyboard hook
+        # Engine 1: Low-level keyboard hook (multiple friendly hotkeys)
         try:
             keyboard.add_hotkey("windows+alt", _on_hotkey_press, suppress=False)
-            logger.info("Low-level OS keyboard hook engaged for Windows + Alt.")
+            keyboard.add_hotkey("alt+space", _on_hotkey_press, suppress=False)
+            keyboard.add_hotkey("ctrl+shift+space", _on_hotkey_press, suppress=False)
+            logger.info("Low-level OS keyboard hooks engaged for Windows+Alt, Alt+Space, Ctrl+Shift+Space.")
         except Exception as e:
             logger.warning(f"Could not bind keyboard.add_hotkey: {e}")
 
@@ -352,12 +358,12 @@ class NexusBackgroundDaemon:
             if ambient_samples:
                 sorted_samples = sorted(ambient_samples)
                 median_noise = sorted_samples[len(sorted_samples) // 2]
-                avg_noise = min(max(median_noise, 50.0), 1200.0)
+                avg_noise = min(max(median_noise, 50.0), 750.0)
             else:
                 avg_noise = 400.0
 
-            # Set speech threshold adaptively: bound strictly in [300.0, 1800.0]
-            speech_threshold = min(max(avg_noise * 1.45, 300.0), 1800.0)
+            # Set speech threshold adaptively: bound strictly in [350.0, 950.0]
+            speech_threshold = min(max(avg_noise * 1.25, 450.0), 950.0)
             logger.info(f"Calibration complete: Ambient Noise={avg_noise:.1f}, Speech Threshold={speech_threshold:.1f}")
 
             # Stream state with acoustic pre-roll ring buffer (~320ms / 14 chunks)
@@ -404,7 +410,7 @@ class NexusBackgroundDaemon:
                                 avg_noise = avg_noise * 0.90 + chunk_rms * 0.10
                             else:
                                 avg_noise = avg_noise * 0.995 + chunk_rms * 0.005
-                            speech_threshold = min(max(avg_noise * 1.45, 300.0), 1800.0)
+                            speech_threshold = min(max(avg_noise * 1.25, 450.0), 950.0)
 
                     # Continuous Acoustic Voice Activity & Phrase Accumulation
                     if chunk_rms > speech_threshold:
@@ -479,7 +485,7 @@ class NexusBackgroundDaemon:
         Returns True if command was handled (stops LLM fallback).
         """
         lower_cmd = command.lower().strip()
-        tools = JarvisTools()
+        tools = NexusTools()
 
         # ── App Launch ──────────────────────────────────────────────────────────
         # "open chrome", "launch vscode", "open calculator"
@@ -635,7 +641,7 @@ class NexusBackgroundDaemon:
                 app_name = lower_cmd.replace(prefix, "").strip()
                 if app_name:
                     self.tts.speak(f"Opening {app_name}.")
-                    JarvisTools.launch_app(app_name)
+                    NexusTools.launch_app(app_name)
                     return True
 
         return False

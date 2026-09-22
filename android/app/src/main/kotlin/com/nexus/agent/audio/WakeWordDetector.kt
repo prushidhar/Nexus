@@ -17,7 +17,7 @@ import kotlinx.coroutines.delay
  *   openWakeWord doesn't ship a prebuilt Android aar. You need to run its ONNX model
  *   through onnxruntime-android (already a transitive dep of sherpa-onnx).
  *   Model download: https://github.com/dscripka/openWakeWord/releases
- *     → hey_nexus.onnx  (or use 'hey_jarvis' and relabel it for the demo)
+ *     → hey_nexus.onnx  (or use 'hey_nexus' and relabel it for the demo)
  *   Wire this ONLY after the core loop is proven solid — it's polish, not scoring.
  *
  * The detector calls [onTriggered](true) when a wake event is detected.

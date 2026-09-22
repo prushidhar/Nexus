@@ -142,7 +142,7 @@ class NexusMemory:
         return (
             f"User Profile: Name={self.profile.get('user_name', 'Sir')}, "
             f"Preferred Editor={self.profile.get('preferred_editor', 'vscode')}, "
-            f"Active Project={self.project_context.get('active_project', 'Nexus Jarvis')}. "
+            f"Active Project={self.project_context.get('active_project', 'Nexus AI Companion')}. "
             f"Recent Context: {last_task}."
         )
 

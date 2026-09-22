@@ -1,5 +1,5 @@
 """
-Jarvis Reasoning Engine: Multi-layer Intelligence combining Fast-Path Intent Routing
+Nexus Reasoning Engine: Multi-layer Intelligence combining Fast-Path Intent Routing
 and Local LLM Inference via llama.cpp (Qwen2.5-0.5B GGUF).
 """
 
@@ -10,15 +10,15 @@ import logging
 from pathlib import Path
 from typing import Dict, Any, Tuple, Optional
 
-from jarvis_tools import JarvisTools
+from nexus_tools import NexusTools
 
-logger = logging.getLogger("JarvisBrain")
+logger = logging.getLogger("NexusBrain")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 
 MODEL_PATH = Path(r"C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\models\qwen2.5-0.5b-instruct-q4_k_m.gguf")
 
 
-class JarvisBrain:
+class NexusBrain:
     """Core intelligence engine for understanding voice input and executing tools."""
 
     SYSTEM_PROMPT = (
@@ -137,22 +137,22 @@ class JarvisBrain:
 
         # Visual Pointing Intent (Clicky Screen Companion - Workflow #2)
         if any(w in cmd for w in ["where is", "point at", "point to", "find the", "show me where", "show me the"]):
-            res = JarvisTools.point_at_target(cmd)
+            res = NexusTools.point_at_target(cmd)
             lbl = res.get("label", "the item")
             return f"Pointing at {lbl} on your screen, Sir.", res
 
         # Multi-Persona Switch Intent (Workflow #16)
         if any(w in cmd for w in ["switch to coder", "activate coder", "become coder"]):
-            res = JarvisTools.switch_persona("coder")
+            res = NexusTools.switch_persona("coder")
             return "Switched to Coder persona. Ready for software engineering, terminal execution, and debugging.", res
         if any(w in cmd for w in ["switch to researcher", "activate researcher", "become researcher"]):
-            res = JarvisTools.switch_persona("researcher")
+            res = NexusTools.switch_persona("researcher")
             return "Switched to Researcher persona. Standing by for deep document analysis and data synthesis.", res
         if any(w in cmd for w in ["switch to teacher", "activate teacher", "become teacher"]):
-            res = JarvisTools.switch_persona("teacher")
+            res = NexusTools.switch_persona("teacher")
             return "Switched to Teacher persona. Ready to visually guide you through any screen workflow.", res
         if any(w in cmd for w in ["switch to nexus", "activate nexus", "become nexus", "default persona"]):
-            res = JarvisTools.switch_persona("nexus")
+            res = NexusTools.switch_persona("nexus")
             return "Executive Nexus persona active, Sir. Desktop automation and telemetry at your command.", res
 
         # Personal Notes & Knowledge Vault Intent (Workflow #14)
@@ -160,7 +160,7 @@ class JarvisBrain:
         if note_match:
             note_body = note_match.group(1).strip()
             if note_body:
-                res = JarvisTools.save_note(content=note_body, title=note_body[:30], category="general")
+                res = NexusTools.save_note(content=note_body, title=note_body[:30], category="general")
                 return f"Saved note to your knowledge vault: '{note_body[:40]}...'", res
 
         # Type for Me Intent (Workflow #4)
@@ -168,7 +168,7 @@ class JarvisBrain:
         if type_match:
             text_to_type = type_match.group(1).strip()
             if text_to_type:
-                res = JarvisTools.type_text(text_to_type)
+                res = NexusTools.type_text(text_to_type)
                 return "Text entered into active window, Sir.", res
 
         # 0. Direct App & System Trigger Keywords
@@ -196,7 +196,7 @@ class JarvisBrain:
         }
         if cmd in DIRECT_APPS:
             app, reply = DIRECT_APPS[cmd]
-            return reply, JarvisTools.launch_app(app)
+            return reply, NexusTools.launch_app(app)
 
         # 1. App Launching with prefixes (open/launch/start)
         app_patterns = [
@@ -214,12 +214,12 @@ class JarvisBrain:
         ]
         for pattern, app, reply in app_patterns:
             if re.search(pattern, cmd):
-                res = JarvisTools.launch_app(app)
+                res = NexusTools.launch_app(app)
                 return reply, res
 
         # 2. System Telemetry / Hardware Status
         if any(w in cmd for w in ["system status", "hardware status", "cpu usage", "ram usage", "battery", "pc stats", "status", "specs", "cpu"]):
-            status_res = JarvisTools.get_system_status()
+            status_res = NexusTools.get_system_status()
             if status_res["status"] == "success":
                 d = status_res["data"]
                 speech = (
@@ -232,37 +232,37 @@ class JarvisBrain:
 
         # 3. Screenshot Capture
         if any(w in cmd for w in ["take a screenshot", "screenshot the screen", "capture display", "snap screen", "screenshot", "snap"]):
-            shot_res = JarvisTools.take_screenshot()
+            shot_res = NexusTools.take_screenshot()
             if shot_res["status"] == "success":
                 return "Screen captured and saved to the screenshots repository.", shot_res
             return "Screen capture triggered.", shot_res
 
         # 4. Media & Volume Control
         if any(w in cmd for w in ["volume up", "increase volume", "louder"]):
-            res = JarvisTools.media_control("up")
+            res = NexusTools.media_control("up")
             return "Increasing system volume.", res
         if any(w in cmd for w in ["volume down", "lower volume", "quieter"]):
-            res = JarvisTools.media_control("down")
+            res = NexusTools.media_control("down")
             return "Decreasing system volume.", res
         if any(w in cmd for w in ["mute audio", "unmute audio", "toggle mute", "mute"]):
-            res = JarvisTools.media_control("mute")
+            res = NexusTools.media_control("mute")
             return "Audio mute toggled.", res
 
         # 5. Office Kit Phone Bridge Actions
         if any(w in cmd for w in ["sync clipboard", "clipboard to phone", "send clipboard to phone"]):
-            res = JarvisTools.office_kit_sync_clipboard()
+            res = NexusTools.office_kit_sync_clipboard()
             return "Clipboard synchronized with your iQOO 15 via Vivo Office Kit.", res
 
         if "send to phone" in cmd or "push to phone" in cmd:
             content = cmd.replace("send to phone", "").replace("push to phone", "").strip()
-            res = JarvisTools.office_kit_push_to_phone("NOTIFICATION", {"message": content or "Pushed from Laptop Jarvis"})
+            res = NexusTools.office_kit_push_to_phone("NOTIFICATION", {"message": content or "Pushed from Laptop Nexus"})
             return f"Pushed notification to your iQOO 15.", res
 
         # 6. Web Search
         search_match = re.search(r"(?:search for|search|google)\s+(.+)", cmd)
         if search_match:
             search_term = search_match.group(1).strip()
-            res = JarvisTools.web_search(search_term)
+            res = NexusTools.web_search(search_term)
             return f"Searching the web for {search_term}.", res
 
         return None
@@ -321,21 +321,21 @@ class JarvisBrain:
     def _dispatch_tool(self, tool_name: str, args: dict) -> dict:
         """Dispatches dynamic tool call from LLM."""
         if tool_name == "launch_app":
-            return JarvisTools.launch_app(args.get("app_name", "notepad"))
+            return NexusTools.launch_app(args.get("app_name", "notepad"))
         elif tool_name == "system_status":
-            return JarvisTools.get_system_status()
+            return NexusTools.get_system_status()
         elif tool_name == "take_screenshot":
-            return JarvisTools.take_screenshot()
+            return NexusTools.take_screenshot()
         elif tool_name == "web_search":
-            return JarvisTools.web_search(args.get("query", ""))
+            return NexusTools.web_search(args.get("query", ""))
         elif tool_name == "open_url":
-            return JarvisTools.open_url(args.get("url", ""))
+            return NexusTools.open_url(args.get("url", ""))
         elif tool_name == "media_control":
-            return JarvisTools.media_control(args.get("action", "up"))
+            return NexusTools.media_control(args.get("action", "up"))
         elif tool_name == "office_kit_sync":
-            return JarvisTools.office_kit_sync_clipboard(args.get("content"))
+            return NexusTools.office_kit_sync_clipboard(args.get("content"))
         elif tool_name == "push_to_phone":
-            return JarvisTools.office_kit_push_to_phone(args.get("action", "MESSAGE"), args.get("payload", {}))
+            return NexusTools.office_kit_push_to_phone(args.get("action", "MESSAGE"), args.get("payload", {}))
         return {"status": "error", "message": f"Unknown tool: {tool_name}"}
 
     def _conversational_fallback(self, query: str) -> str:
@@ -354,3 +354,7 @@ class JarvisBrain:
                 "and synchronize tasks or clipboard data directly with your iQOO 15 phone."
             )
         return f"Understood, Sir. Processing your request: {query}."
+
+
+# Compatibility alias
+JarvisBrain = NexusBrain

@@ -1,5 +1,5 @@
 """
-Automated Comprehensive Test Suite for Jarvis Real-Time Voice Agent.
+Automated Comprehensive Test Suite for Nexus Real-Time Voice Agent.
 Tests TTS, ASR, openWakeWord neural engine, PC Automation Tools, Office Kit Bridge,
 and Local GGUF LLM Inference with zero mocks.
 """
@@ -12,16 +12,18 @@ from pathlib import Path
 LAPTOP_DIR = Path(r"C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\laptop")
 sys.path.insert(0, str(LAPTOP_DIR))
 
-from jarvis_tools import JarvisTools
-from jarvis_voice import JarvisTTS, JarvisASR, JarvisWakeDetector
-from jarvis_brain import JarvisBrain
+from nexus_tools import NexusTools, NexusTools
+from nexus_voice import NexusTTS, NexusASR, NexusWakeDetector
+NexusTTS, NexusASR, NexusWakeDetector = NexusTTS, NexusASR, NexusWakeDetector
+from nexus_brain import NexusBrain
+NexusBrain = NexusBrain
 
 
-class TestRealTimeJarvis(unittest.TestCase):
+class TestRealTimeNexus(unittest.TestCase):
 
     def test_01_tools_system_status(self):
         """Verifies real-time hardware telemetry reading."""
-        res = JarvisTools.get_system_status()
+        res = NexusTools.get_system_status()
         self.assertEqual(res["status"], "success")
         data = res["data"]
         self.assertIn("cpu", data)
@@ -34,11 +36,11 @@ class TestRealTimeJarvis(unittest.TestCase):
     def test_02_tools_office_kit_bridge(self):
         """Verifies Office Kit clipboard sync and task dispatch."""
         test_clip = "Test-Handoff-Payload-iQOO15"
-        res = JarvisTools.office_kit_sync_clipboard(test_clip)
+        res = NexusTools.office_kit_sync_clipboard(test_clip)
         self.assertEqual(res["status"], "success")
         self.assertEqual(res["clipboard"], test_clip)
 
-        task_res = JarvisTools.office_kit_push_to_phone("CAPTURE_PHOTO", {"camera": "rear_telephoto"})
+        task_res = NexusTools.office_kit_push_to_phone("CAPTURE_PHOTO", {"camera": "rear_telephoto"})
         self.assertEqual(task_res["status"], "success")
         self.assertIn("task_id", task_res)
         print(f"[PASS] Office Kit Bridge: Dispatched {task_res['task_id']}")
@@ -46,7 +48,7 @@ class TestRealTimeJarvis(unittest.TestCase):
     def test_03_wake_detection_neural_model(self):
         """Verifies openWakeWord neural inference with 'hey_jarvis' ONNX model."""
         import numpy as np
-        wd = JarvisWakeDetector(threshold=0.40)
+        wd = NexusWakeDetector(threshold=0.40)
         self.assertIn("hey_jarvis", wd.oww.models)
         
         # Test inference on audio chunk
@@ -57,7 +59,7 @@ class TestRealTimeJarvis(unittest.TestCase):
 
     def test_04_brain_fast_path_routing(self):
         """Verifies sub-millisecond intent routing."""
-        brain = JarvisBrain(use_llm=False)
+        brain = NexusBrain(use_llm=False)
         speech, tool_res = brain.process_query("what is the system status")
         self.assertIn("System is operational", speech)
         self.assertIsNotNone(tool_res)
@@ -65,7 +67,7 @@ class TestRealTimeJarvis(unittest.TestCase):
 
     def test_05_local_llm_inference(self):
         """Verifies 100% local GGUF model execution via llama.cpp."""
-        brain = JarvisBrain(use_llm=True)
+        brain = NexusBrain(use_llm=True)
         self.assertIsNotNone(brain.llm, "GGUF LLM should be loaded")
         
         speech, tool_res = brain.process_query("What is your primary mission?")

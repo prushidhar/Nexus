@@ -1,5 +1,5 @@
 """
-Real-time Jarvis System & Office Kit Automation Tools
+Nexus System & Office Kit Automation Tools
 Executes genuine Windows OS automation, hardware telemetry, application control,
 web navigation, and cross-device phone-laptop bridge actions.
 """
@@ -18,7 +18,7 @@ import psutil
 import pyautogui
 import pyperclip
 
-logger = logging.getLogger("JarvisTools")
+logger = logging.getLogger("NexusTools")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 
 BASE_DIR = Path(r"C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent")
@@ -31,7 +31,7 @@ SCREENSHOTS_DIR.mkdir(parents=True, exist_ok=True)
 BRIDGE_DIR.mkdir(parents=True, exist_ok=True)
 
 
-class JarvisTools:
+class NexusTools:
     """Comprehensive tool suite for PC automation and iQOO/Vivo phone bridge."""
 
     APP_MAP = {
@@ -110,7 +110,7 @@ class JarvisTools:
     def launch_app(app_name: str) -> dict:
         """Launches a desktop application by name or common alias."""
         clean_name = app_name.strip().lower()
-        resolved = JarvisTools._resolve_app_path(clean_name)
+        resolved = NexusTools._resolve_app_path(clean_name)
         logger.info(f"Launching application: {clean_name} -> {resolved}")
 
         try:
@@ -246,7 +246,7 @@ class JarvisTools:
             
             file_path = SCREENSHOTS_DIR / filename
             try:
-                shot = JarvisTools._capture_screen()
+                shot = NexusTools._capture_screen()
             except Exception:
                 shot = pyautogui.screenshot()
             shot.save(str(file_path))
@@ -454,12 +454,12 @@ class JarvisTools:
 
     @staticmethod
     def office_kit_push_to_phone(action: str, payload: dict) -> dict:
-        """Pushes a handoff task from laptop Jarvis to iQOO 15 phone."""
+        """Pushes a handoff task from laptop Nexus to iQOO 15 phone."""
         try:
             task = {
                 "id": f"task_{int(time.time() * 1000)}",
                 "timestamp": datetime.now().isoformat(),
-                "source": "JARVIS_LAPTOP_NODE",
+                "source": "NEXUS_LAPTOP_NODE",
                 "target": "NEXUS_iQOO15_AGENT",
                 "action": action,
                 "payload": payload,
@@ -511,6 +511,10 @@ class JarvisTools:
 
     @staticmethod
     def switch_persona(persona_name: str) -> dict:
-        """Switches active companion persona (Jarvis, Coder, Teacher, Researcher)."""
+        """Switches active companion persona (Nexus, Coder, Teacher, Researcher)."""
         from nexus_personas import personas
         return personas.switch_persona(persona_name)
+
+
+# Compatibility alias
+JarvisTools = NexusTools

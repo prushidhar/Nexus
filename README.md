@@ -77,9 +77,9 @@ nexus/
 │   ├── nexus_daemon.py             # Master background voice daemon & hotkey poller
 │   ├── nexus_office_kit.py         # Full bidirectional Vivo Office Kit bridge
 │   ├── clicky_bridge.py            # High-performance WebSocket bridge to Notch HUD
-│   ├── jarvis_brain.py             # Dual-layer Brain (Fast-Path + Local llama.cpp)
-│   ├── jarvis_tools.py             # Windows OS automation (Apps, Volume, Metrics)
-│   ├── jarvis_voice.py             # DirectSound PyAudio capture & SAPI5 TTS
+│   ├── nexus_brain.py              # Dual-layer Brain (Fast-Path + Local llama.cpp)
+│   ├── nexus_tools.py              # Windows OS automation (Apps, Volume, Metrics)
+│   ├── nexus_voice.py              # DirectSound PyAudio capture & SAPI5 TTS
 │   ├── nexus_dictation.py          # Hands-free contextual typing engine
 │   └── nexus_personas.py           # Multi-persona switching module
 │

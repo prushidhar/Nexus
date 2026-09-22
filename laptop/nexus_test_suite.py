@@ -40,7 +40,7 @@ def run_all_tests():
     # Test 1: DirectSound Audio Capture
     logger.info("[Test 1/10] Testing DirectSound Audio Input Discovery...")
     try:
-        from jarvis_voice import get_best_audio_input
+        from nexus_voice import get_best_audio_input
         idx, rate, name = get_best_audio_input()
         assert idx is not None and rate > 0
         logger.info(f"  PASS: Found active audio device [{idx}] {name} @ {rate}Hz")
@@ -88,8 +88,8 @@ def run_all_tests():
     # Test 4: Local GGUF LLM Inference
     logger.info("[Test 4/10] Testing Local GGUF Neural Engine (Qwen2.5 0.5B)...")
     try:
-        from jarvis_brain import JarvisBrain
-        brain = JarvisBrain(use_llm=True)
+        from nexus_brain import NexusBrain
+        brain = NexusBrain(use_llm=True)
         t0 = time.time()
         ans = brain.think("Answer in exactly two words: System Status?")
         dt = time.time() - t0
@@ -105,6 +105,7 @@ def run_all_tests():
     logger.info("[Test 5/10] Testing Clicky WebSocket Bridge (ws://127.0.0.1:9876)...")
     try:
         from clicky_bridge import clicky
+        clicky.ensure_clicky_running()
         p_ok = clicky.set_persona("nexus")
         s_ok = clicky.set_routine_status("Test Active", 1)
         assert p_ok and s_ok

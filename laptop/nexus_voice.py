@@ -1,6 +1,6 @@
 """
 Real-time Voice Pipeline: OpenWakeWord Detection + SpeechRecognition + pyttsx3 Synthesis.
-100% on-device wake detection and low-latency voice capture/synthesis for Desktop Jarvis.
+100% on-device wake detection and low-latency voice capture/synthesis for Desktop Nexus.
 """
 
 import sys
@@ -19,7 +19,7 @@ import speech_recognition as sr
 import openwakeword
 from openwakeword.model import Model as OWWModel
 
-logger = logging.getLogger("JarvisVoice")
+logger = logging.getLogger("NexusVoice")
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s: %(message)s")
 
 
@@ -151,7 +151,7 @@ def safe_print(*args, **kwargs):
         pass
 
 
-class JarvisTTS:
+class NexusTTS:
     """Thread-safe Text-to-Speech synthesizer using Windows SAPI5."""
 
     def __init__(self, rate: int = 175, volume: float = 1.0):
@@ -184,7 +184,7 @@ class JarvisTTS:
                 logger.error(f"TTS speak error: {e}")
 
 
-class JarvisASR:
+class NexusASR:
     """Microphone listener and Speech-to-Text transcriber."""
 
     def __init__(self, mic_index: Optional[int] = None):
@@ -245,7 +245,7 @@ class JarvisASR:
             return ""
 
 
-class JarvisWakeDetector:
+class NexusWakeDetector:
     """Continuous wake-word detection using openWakeWord neural model with hardware resampling."""
 
     TARGET_SAMPLE_RATE = 16000
@@ -360,13 +360,13 @@ class JarvisWakeDetector:
             p.terminate()
 
 
-class JarvisVoiceSubsystem:
+class NexusVoiceSubsystem:
     """Unified voice facade bundling TTS, ASR, and WakeWord detection."""
 
     def __init__(self):
         dev_idx, _, _ = get_best_audio_input()
-        self.tts = JarvisTTS()
-        self.asr = JarvisASR(mic_index=dev_idx)
+        self.tts = NexusTTS()
+        self.asr = NexusASR(mic_index=dev_idx)
         self.wake_detector = None
 
     def speak(self, text: str):
@@ -376,9 +376,15 @@ class JarvisVoiceSubsystem:
         return self.asr.listen(timeout=timeout, phrase_limit=phrase_limit)
 
     def start_wake_listening(self, callback: Callable):
-        self.wake_detector = JarvisWakeDetector(on_wake=callback)
+        self.wake_detector = NexusWakeDetector(on_wake=callback)
         self.wake_detector.start()
 
     def stop_wake_listening(self):
         if self.wake_detector:
             self.wake_detector.stop()
+
+# Compatibility aliases
+JarvisTTS = NexusTTS
+JarvisASR = NexusASR
+JarvisWakeDetector = NexusWakeDetector
+JarvisVoiceSubsystem = NexusVoiceSubsystem
