@@ -170,9 +170,12 @@ class NexusBackgroundDaemon:
                 if old_pid != os.getpid() and psutil.pid_exists(old_pid):
                     p = psutil.Process(old_pid)
                     if "python" in p.name().lower():
-                        logger.info(f"Nexus daemon is already running (PID {old_pid}). Expanding Notch HUD and exiting duplicate.")
-                        clicky.expand_notch()
-                        sys.exit(0)
+                        logger.info(f"Terminating previous Nexus daemon (PID {old_pid}) to apply new instance...")
+                        try:
+                            p.kill()
+                            p.wait(timeout=2)
+                        except Exception:
+                            pass
             except Exception:
                 pass
 
@@ -496,14 +499,15 @@ class NexusBackgroundDaemon:
             app_name = open_match.group(1).strip()
             # Strip trailing noise words
             app_name = re.sub(r"\s*(please|now|for me|up)\s*$", "", app_name).strip()
-            clicky.set_stage("reading", f"Opening {app_name}...")
-            result = tools.launch_app(app_name)
-            if result.get("status") == "success":
-                self.tts.speak(f"Opening {app_name}.")
-            else:
-                self.tts.speak(f"I couldn't find {app_name}. Make sure it's installed.")
-                logger.warning(f"[APP LAUNCH FAILED]: {app_name} — {result}")
-            return True
+            if not any(kw in app_name for kw in ["dictat", "routine", "research", "browse"]):
+                clicky.set_stage("reading", f"Opening {app_name}...")
+                result = tools.launch_app(app_name)
+                if result.get("status") == "success":
+                    self.tts.speak(f"Opening {app_name}.")
+                else:
+                    self.tts.speak(f"I couldn't find {app_name}. Make sure it's installed.")
+                    logger.warning(f"[APP LAUNCH FAILED]: {app_name} — {result}")
+                return True
 
         # ── Close App ────────────────────────────────────────────────────────────
         close_match = re.match(r"^(?:close|quit|kill|exit)\s+(.+)$", lower_cmd)
