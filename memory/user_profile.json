@@ -1,0 +1,11 @@
+{
+  "user_name": "Sir",
+  "assistant_name": "Nexus",
+  "preferred_browser": "chrome",
+  "preferred_editor": "vscode",
+  "theme": "dark",
+  "verbosity": "concise",
+  "created_at": "2026-09-22T22:29:52.011619",
+  "test_key": "test_value",
+  "updated_at": "2026-09-22T23:18:56.727033"
+}

@@ -1,0 +1,47 @@
+{
+  "morning_briefing": {
+    "id": "morning_briefing",
+    "name": "Daily Morning Standup Briefing",
+    "interval_hours": 24,
+    "target_hour": 9,
+    "target_minute": 0,
+    "action": "morning_briefing",
+    "allow_catchup": true,
+    "requires_network": true,
+    "last_run": "2026-09-22T22:29:31.401517",
+    "next_run": "2026-09-23T09:00:00",
+    "failure_count": 0,
+    "paused": false,
+    "last_error": null
+  },
+  "git_watch_summary": {
+    "id": "git_watch_summary",
+    "name": "Repository Changes Watcher",
+    "interval_hours": 3,
+    "target_hour": null,
+    "target_minute": null,
+    "action": "git_watch_summary",
+    "allow_catchup": false,
+    "requires_network": false,
+    "last_run": "2026-09-22T23:18:56.722487",
+    "next_run": "2026-09-23T02:18:56.722487",
+    "failure_count": 0,
+    "paused": false,
+    "last_error": null
+  },
+  "cache_hygiene": {
+    "id": "cache_hygiene",
+    "name": "Workspace Cache & Scratch Cleaner",
+    "interval_hours": 168,
+    "target_hour": 0,
+    "target_minute": 0,
+    "action": "cache_hygiene",
+    "allow_catchup": true,
+    "requires_network": false,
+    "last_run": null,
+    "next_run": "2026-09-29T22:10:51.374310",
+    "failure_count": 0,
+    "paused": false,
+    "last_error": null
+  }
+}

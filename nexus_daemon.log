@@ -1,0 +1,349 @@
+2026-09-22 20:16:55,463 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:16:55,849 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:16:55,980 [INFO] JarvisVoice: Selected Primary DirectSound capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 20:16:55,980 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 20:16:55,982 [INFO] NexusDaemon: Nexus daemon started with PID 17220
+2026-09-22 20:16:56,022 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 20:16:56,022 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 20:17:02,566 [INFO] NexusDaemon: Continuous background phrase listener engaged.
+2026-09-22 20:20:01,783 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:20:02,238 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:20:02,359 [INFO] JarvisVoice: Selected Primary DirectSound capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 20:20:02,360 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 20:20:02,360 [INFO] NexusDaemon: Nexus daemon started with PID 20388
+2026-09-22 20:20:02,404 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 20:20:02,404 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 20:20:11,770 [INFO] NexusDaemon: Continuous background phrase listener engaged.
+2026-09-22 20:37:47,094 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:37:47,436 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:37:47,545 [INFO] JarvisVoice: Selected built-in Microphone Array: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:37:47,546 [INFO] NexusDaemon: Nexus initialized on microphone: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:38:32,760 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:38:33,094 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:38:33,204 [INFO] JarvisVoice: Selected built-in Microphone Array: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:38:33,206 [INFO] NexusDaemon: Nexus initialized on microphone: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:38:33,207 [INFO] NexusDaemon: Nexus daemon started with PID 11056
+2026-09-22 20:38:33,233 [INFO] NexusDaemon: Calibrating background listener against ambient room acoustics...
+2026-09-22 20:38:54,778 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:38:55,115 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:38:55,226 [INFO] JarvisVoice: Selected built-in Microphone Array: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:38:55,228 [INFO] NexusDaemon: Nexus initialized on microphone: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:38:55,229 [INFO] NexusDaemon: Nexus daemon started with PID 12892
+2026-09-22 20:38:55,258 [INFO] NexusDaemon: Calibrating background listener against ambient room acoustics...
+2026-09-22 20:38:56,406 [INFO] NexusDaemon: Ambient noise calibration complete. Threshold: 68.7
+2026-09-22 20:38:56,441 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 20:38:56,441 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 20:39:02,900 [INFO] NexusDaemon: Continuous background phrase listener engaged.
+2026-09-22 20:40:07,387 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:40:07,730 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:40:07,822 [INFO] JarvisVoice: Selected built-in Microphone Array: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:40:07,824 [INFO] NexusDaemon: Nexus initialized on microphone: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:40:07,824 [INFO] NexusDaemon: Nexus daemon started with PID 19940
+2026-09-22 20:40:07,851 [INFO] NexusDaemon: Calibrating background listener against ambient room acoustics...
+2026-09-22 20:40:09,039 [INFO] NexusDaemon: Ambient noise calibration complete. Threshold: 67.3
+2026-09-22 20:40:09,069 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 20:40:09,071 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 20:40:40,933 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:40:41,266 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:40:41,378 [INFO] JarvisVoice: Selected built-in Microphone Array: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:40:41,378 [INFO] NexusDaemon: Nexus initialized on microphone: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:40:41,380 [INFO] NexusDaemon: Nexus daemon started with PID 9276
+2026-09-22 20:40:41,408 [INFO] NexusDaemon: Calibrating background listener against ambient room acoustics...
+2026-09-22 20:40:42,568 [INFO] NexusDaemon: Ambient noise calibration complete. Threshold: 67.3
+2026-09-22 20:40:42,599 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 20:40:42,599 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 20:41:07,093 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:41:07,431 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:41:07,534 [INFO] JarvisVoice: Selected built-in Microphone Array: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:41:07,535 [INFO] NexusDaemon: Nexus initialized on microphone: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:41:07,535 [INFO] NexusDaemon: Nexus daemon started with PID 20344
+2026-09-22 20:41:07,565 [INFO] NexusDaemon: Calibrating background listener against ambient room acoustics...
+2026-09-22 20:41:08,715 [INFO] NexusDaemon: Ambient noise calibration complete. Threshold: 67.3
+2026-09-22 20:41:08,746 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 20:41:08,747 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 20:41:44,910 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 20:41:45,247 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 20:41:45,352 [INFO] JarvisVoice: Selected built-in Microphone Array: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:41:45,352 [INFO] NexusDaemon: Nexus initialized on microphone: [2] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-22 20:41:45,354 [INFO] NexusDaemon: Nexus daemon started with PID 12908
+2026-09-22 20:41:45,384 [INFO] NexusDaemon: Calibrating background listener against ambient room acoustics...
+2026-09-22 20:41:46,524 [INFO] NexusDaemon: Ambient noise calibration complete. Threshold: 67.2
+2026-09-22 20:41:46,554 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 20:41:46,555 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 20:41:53,018 [INFO] NexusDaemon: Continuous background phrase listener engaged.
+2026-09-22 21:41:19,083 [INFO] NexusDaemon: Heard audio snippet: '2098 induction'
+2026-09-22 21:41:23,234 [INFO] NexusDaemon: Heard audio snippet: 'video'
+2026-09-22 21:42:24,494 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 21:42:25,613 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 21:42:27,580 [INFO] JarvisVoice: Selected active microphone with live audio: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz (score=14253.0)
+2026-09-22 21:42:27,583 [INFO] NexusDaemon: Nexus initialized on microphone: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz
+2026-09-22 21:42:27,586 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 21:42:27,837 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 21:42:27,837 [INFO] NexusDaemon: Nexus daemon started with PID 22116
+2026-09-22 21:42:27,896 [INFO] NexusDaemon: Calibrating background listener against ambient room acoustics...
+2026-09-22 21:42:27,993 [INFO] NexusDaemon: Ambient noise calibration complete. Threshold: 11511.1
+2026-09-22 21:42:28,072 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 21:42:28,073 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 21:42:34,578 [INFO] NexusDaemon: OpenWakeWord continuous neural stream engaged.
+2026-09-22 21:42:34,579 [INFO] NexusDaemon: Continuous background phrase listener engaged.
+2026-09-22 21:44:04,570 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 21:44:05,340 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 21:44:07,005 [INFO] JarvisVoice: Selected active microphone with live audio: [6] Primary Sound Capture Driver @ 44100Hz (score=18570.0)
+2026-09-22 21:44:07,006 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 21:44:07,007 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 21:44:07,135 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 21:44:07,135 [INFO] NexusDaemon: Nexus daemon started with PID 19224
+2026-09-22 21:44:07,194 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 21:44:07,194 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 21:44:13,843 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream...
+2026-09-22 21:44:13,845 [INFO] NexusDaemon: Calibration complete: Ambient Noise=9433.5, Speech Threshold=15093.6
+2026-09-22 21:44:13,845 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 21:57:23,642 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 21:57:24,089 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 21:57:25,862 [INFO] JarvisVoice: Selected active microphone with live audio: [6] Primary Sound Capture Driver @ 44100Hz (score=11409.0)
+2026-09-22 21:57:25,862 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 21:57:25,864 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 21:57:25,964 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 21:57:25,965 [INFO] NexusDaemon: Nexus daemon started with PID 22352
+2026-09-22 21:57:25,969 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 21:57:26,041 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 21:57:26,042 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 21:57:26,084 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 21:57:26,084 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 21:57:32,694 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream...
+2026-09-22 21:57:32,694 [INFO] NexusDaemon: Calibration complete: Ambient Noise=8933.5, Speech Threshold=14293.6
+2026-09-22 21:57:32,694 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 22:26:06,874 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 22:26:06,931 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 22:26:07,345 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 22:26:09,058 [INFO] JarvisVoice: Selected active microphone with live audio: [6] Primary Sound Capture Driver @ 44100Hz (score=19052.0)
+2026-09-22 22:26:09,059 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 22:26:09,061 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 22:26:09,159 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 22:26:09,160 [INFO] NexusDaemon: Nexus daemon started with PID 816
+2026-09-22 22:26:09,165 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 22:26:09,234 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 22:26:09,234 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 22:26:09,235 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 22:26:09,302 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 22:26:09,302 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 22:26:15,816 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream...
+2026-09-22 22:26:15,816 [INFO] NexusDaemon: Calibration complete: Ambient Noise=6582.0, Speech Threshold=10531.2
+2026-09-22 22:26:15,816 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 22:31:54,117 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 22:31:54,175 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 22:31:54,580 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 22:31:56,275 [INFO] JarvisVoice: Selected active microphone with live audio: [6] Primary Sound Capture Driver @ 44100Hz (score=13262.0)
+2026-09-22 22:31:56,276 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 22:31:56,276 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 22:31:56,376 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 22:31:56,376 [INFO] NexusDaemon: Nexus daemon started with PID 10588
+2026-09-22 22:31:56,385 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 22:31:56,459 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 22:31:56,459 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 22:31:56,459 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 22:31:56,487 [WARNING] NexusDaemon: Could not engage Clicky incoming listener: name 'threading' is not defined
+2026-09-22 22:31:56,530 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 22:31:56,530 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 22:32:03,055 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream...
+2026-09-22 22:32:03,055 [INFO] NexusDaemon: Calibration complete: Ambient Noise=5418.6, Speech Threshold=8669.7
+2026-09-22 22:32:03,055 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 22:32:16,560 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 22:32:16,616 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 22:32:17,040 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 22:32:18,713 [INFO] JarvisVoice: Selected active microphone with live audio: [6] Primary Sound Capture Driver @ 44100Hz (score=11422.0)
+2026-09-22 22:32:18,715 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 22:32:18,717 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 22:32:18,815 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 22:32:18,815 [INFO] NexusDaemon: Nexus daemon started with PID 14132
+2026-09-22 22:32:18,820 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 22:32:18,904 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 22:32:18,904 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 22:32:18,905 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 22:32:18,940 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 22:32:18,978 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 22:32:18,978 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 22:32:25,566 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream...
+2026-09-22 22:32:25,566 [INFO] NexusDaemon: Calibration complete: Ambient Noise=453.0, Speech Threshold=724.8
+2026-09-22 22:32:25,566 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 22:45:48,739 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 22:45:48,879 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 22:45:49,349 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 22:45:51,003 [INFO] JarvisVoice: Selected active microphone with live audio: [8] Microphone Array (Realtek(R) Audio) @ 44100Hz (score=22538.0)
+2026-09-22 22:45:51,005 [INFO] NexusDaemon: Nexus initialized on microphone: [8] Microphone Array (Realtek(R) Audio) @ 44100Hz
+2026-09-22 22:45:51,005 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 22:45:51,133 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 22:45:51,133 [INFO] NexusDaemon: Nexus daemon started with PID 19356
+2026-09-22 22:45:51,142 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 22:45:51,204 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 22:45:51,204 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 22:45:51,205 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 22:45:51,267 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 22:45:51,285 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 22:45:51,285 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 22:45:58,157 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream...
+2026-09-22 22:45:58,157 [INFO] NexusDaemon: Calibration complete: Ambient Noise=9000.5, Speech Threshold=14400.8
+2026-09-22 22:45:58,157 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 22:53:25,782 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 22:53:25,848 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 22:53:26,304 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 22:53:26,963 [INFO] JarvisVoice: Fallback to Primary DirectSound capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 22:53:26,965 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 22:53:26,965 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 22:53:27,067 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 22:53:27,067 [INFO] NexusDaemon: Nexus daemon is already running (PID 19356). Expanding Notch HUD and exiting duplicate.
+2026-09-22 22:53:29,309 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 22:53:29,376 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 22:53:29,912 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 22:53:30,607 [INFO] JarvisVoice: Selected active microphone with live audio: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz (score=11807.0)
+2026-09-22 22:53:30,607 [INFO] NexusDaemon: Nexus initialized on microphone: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz
+2026-09-22 22:53:30,609 [WARNING] root: Tried to import the tflite runtime, but it was not found. Trying to switching to onnxruntime instead, if appropriate models are available.
+2026-09-22 22:53:30,716 [INFO] NexusDaemon: OpenWakeWord neural wake-word engine loaded: 'hey_jarvis'
+2026-09-22 22:53:30,718 [INFO] NexusDaemon: Nexus daemon is already running (PID 19356). Expanding Notch HUD and exiting duplicate.
+2026-09-22 22:59:30,455 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 22:59:30,520 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 22:59:31,011 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 22:59:32,849 [INFO] JarvisVoice: Selected active microphone with live audio: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz (score=18514.0)
+2026-09-22 22:59:32,851 [INFO] NexusDaemon: Nexus initialized on microphone: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz
+2026-09-22 22:59:32,852 [INFO] NexusDaemon: Nexus daemon started with PID 23072
+2026-09-22 22:59:32,864 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 22:59:32,946 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 22:59:32,946 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 22:59:32,946 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 22:59:32,987 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 22:59:33,018 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 22:59:33,018 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 22:59:39,620 [ERROR] NexusDaemon: Failed to open primary audio capture stream: [Errno -9998] Invalid number of channels. Re-probing in 2s...
+2026-09-22 22:59:43,240 [INFO] JarvisVoice: Selected active microphone with live audio: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz (score=4198.0)
+2026-09-22 22:59:43,280 [ERROR] NexusDaemon: Failed to open primary audio capture stream: [Errno -9998] Invalid number of channels. Re-probing in 2s...
+2026-09-22 22:59:46,572 [INFO] JarvisVoice: Selected active microphone with live audio: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz (score=11323.0)
+2026-09-22 22:59:46,622 [ERROR] NexusDaemon: Failed to open primary audio capture stream: [Errno -9998] Invalid number of channels. Re-probing in 2s...
+2026-09-22 22:59:50,234 [INFO] JarvisVoice: Selected active microphone with live audio: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz (score=4198.0)
+2026-09-22 22:59:50,271 [ERROR] NexusDaemon: Failed to open primary audio capture stream: [Errno -9998] Invalid number of channels. Re-probing in 2s...
+2026-09-22 22:59:53,932 [INFO] JarvisVoice: Fallback to Primary DirectSound capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 22:59:53,999 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream...
+2026-09-22 22:59:53,999 [INFO] NexusDaemon: Calibration complete: Ambient Noise=0.5, Speech Threshold=120.0
+2026-09-22 22:59:53,999 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:10:29,132 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 23:10:29,182 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 23:10:29,551 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 23:10:31,144 [INFO] JarvisVoice: Selected active microphone with live audio: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz (score=11138.0)
+2026-09-22 23:10:31,145 [INFO] NexusDaemon: Nexus initialized on microphone: [7] Microphone (G435 Wireless Gaming Headset) @ 44100Hz
+2026-09-22 23:10:31,145 [INFO] NexusDaemon: Nexus daemon started with PID 6980
+2026-09-22 23:10:31,156 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 23:10:31,221 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 23:10:31,222 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 23:10:31,222 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 23:10:31,257 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 23:10:31,293 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 23:10:31,293 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 23:10:37,802 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [7] Microphone (G435 Wireless Gaming Headset), 1ch)...
+2026-09-22 23:10:37,802 [INFO] NexusDaemon: Calibration complete: Ambient Noise=9612.7, Speech Threshold=15380.3
+2026-09-22 23:10:37,802 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:19:43,307 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 23:19:43,369 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 23:19:43,760 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 23:19:43,936 [INFO] JarvisVoice: Selected Windows Primary DirectSound Capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:19:43,936 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:19:43,938 [INFO] NexusDaemon: Nexus daemon started with PID 6740
+2026-09-22 23:19:43,950 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 23:19:44,050 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 23:19:44,050 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 23:19:44,050 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 23:19:44,090 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 23:19:44,132 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 23:19:44,132 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 23:19:50,635 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-22 23:19:50,635 [INFO] NexusDaemon: Calibration complete: Ambient Noise=1200.0, Speech Threshold=1740.0
+2026-09-22 23:19:50,635 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:20:51,739 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 23:20:51,845 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 23:20:52,466 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 23:20:52,836 [INFO] JarvisVoice: Selected Windows Primary DirectSound Capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:20:52,837 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:20:52,840 [INFO] NexusDaemon: Nexus daemon is already running (PID 6740). Expanding Notch HUD and exiting duplicate.
+2026-09-22 23:21:47,526 [CRITICAL] NexusDaemon: UNHANDLED EXCEPTION in thread <Thread(Thread-6 (_poll_async_keystates), started daemon 21724)>:
+Traceback (most recent call last):
+  File "threading.py", line 1045, in _bootstrap_inner
+  File "threading.py", line 982, in run
+  File "C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\laptop\nexus_daemon.py", line 283, in _poll_async_keystates
+    time.sleep(0.02)  # 20ms polling interval (0.001% CPU)
+    ^^^^^^^^^^^^^^^^
+OSError: [WinError 1450] Windows Error 0x5aa
+2026-09-22 23:21:59,380 [ERROR] NexusDaemon: Stream processing error: 
+2026-09-22 23:21:59,634 [ERROR] NexusDaemon: Failed to open primary audio capture stream: [Errno -9999] Unanticipated host error. Re-probing in 2s...
+2026-09-22 23:22:03,227 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [1] Microphone (G435 Wireless Gamin, 1ch)...
+2026-09-22 23:22:03,806 [INFO] NexusDaemon: Calibration complete: Ambient Noise=50.0, Speech Threshold=300.0
+2026-09-22 23:22:56,439 [INFO] NexusRoutines: System wake detected (time jumped 62.1s). Checking for missed routines.
+2026-09-22 23:22:56,439 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:27:46,805 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 23:27:46,991 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 23:27:47,628 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 23:27:47,826 [INFO] JarvisVoice: Selected Windows Primary DirectSound Capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:27:47,827 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:27:47,827 [INFO] NexusDaemon: Nexus daemon started with PID 14208
+2026-09-22 23:27:47,846 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 23:27:47,921 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 23:27:47,921 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 23:27:47,921 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 23:27:47,952 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 23:27:48,027 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 23:27:48,027 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 23:27:54,767 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-22 23:27:54,767 [INFO] NexusDaemon: Calibration complete: Ambient Noise=821.0, Speech Threshold=1190.5
+2026-09-22 23:27:54,767 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:32:43,085 [ERROR] NexusDaemon: Stream processing error: 
+2026-09-22 23:32:43,078 [INFO] NexusRoutines: System wake detected (time jumped 104.5s). Checking for missed routines.
+2026-09-22 23:32:43,482 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-22 23:32:43,483 [INFO] NexusDaemon: Calibration complete: Ambient Noise=88.0, Speech Threshold=300.0
+2026-09-22 23:33:07,195 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:36:44,773 [ERROR] NexusDaemon: Stream processing error: 
+2026-09-22 23:36:44,850 [CRITICAL] NexusDaemon: UNHANDLED EXCEPTION in thread <Thread(Thread-681 (_readerthread), started daemon 18804)>:
+Traceback (most recent call last):
+  File "threading.py", line 1045, in _bootstrap_inner
+  File "threading.py", line 982, in run
+  File "subprocess.py", line 1599, in _readerthread
+MemoryError
+2026-09-22 23:36:45,128 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-22 23:36:45,129 [INFO] NexusDaemon: Calibration complete: Ambient Noise=1200.0, Speech Threshold=1740.0
+2026-09-22 23:37:57,851 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:37:57,852 [INFO] NexusRoutines: System wake detected (time jumped 74.2s). Checking for missed routines.
+2026-09-22 23:39:16,013 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 23:39:16,101 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 23:39:16,689 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 23:39:16,893 [INFO] JarvisVoice: Selected Windows Primary DirectSound Capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:39:16,893 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:39:16,893 [INFO] NexusDaemon: Nexus daemon started with PID 15872
+2026-09-22 23:39:16,910 [INFO] OfficeKit: Office Kit Bridge started — monitoring clipboard + Free Transfer folders.
+2026-09-22 23:39:16,910 [INFO] NexusDaemon: Vivo Office Kit Bridge fully wired and running.
+2026-09-22 23:39:16,910 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 23:39:16,984 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 23:39:16,984 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 23:39:16,986 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 23:39:16,996 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 23:39:17,050 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 23:39:17,050 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 23:39:23,697 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-22 23:39:23,697 [INFO] NexusDaemon: Calibration complete: Ambient Noise=599.0, Speech Threshold=868.5
+2026-09-22 23:39:23,697 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-22 23:57:55,647 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-22 23:57:55,743 [INFO] JarvisBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-22 23:57:56,379 [INFO] JarvisBrain: Local GGUF LLM engine loaded successfully.
+2026-09-22 23:57:56,636 [INFO] JarvisVoice: Selected Windows Primary DirectSound Capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:57:56,638 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-22 23:57:56,638 [INFO] NexusDaemon: Nexus daemon started with PID 12460
+2026-09-22 23:57:56,654 [INFO] OfficeKit: Office Kit Bridge started — monitoring clipboard + Free Transfer folders.
+2026-09-22 23:57:56,654 [INFO] NexusDaemon: Vivo Office Kit Bridge fully wired and running.
+2026-09-22 23:57:56,655 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-22 23:57:56,727 [INFO] NexusDaemon: Low-level OS keyboard hook engaged for Windows + Alt.
+2026-09-22 23:57:56,727 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-22 23:57:56,729 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-22 23:57:56,769 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-22 23:57:56,821 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-22 23:57:56,821 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-22 23:58:03,499 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-22 23:58:03,499 [INFO] NexusDaemon: Calibration complete: Ambient Noise=1200.0, Speech Threshold=1740.0
+2026-09-22 23:58:03,499 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-23 00:00:45,976 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-23 00:00:45,983 [INFO] NexusDaemon: Calibration complete: Ambient Noise=1200.0, Speech Threshold=1740.0
+2026-09-23 00:01:07,540 [INFO] NexusDaemon: Unified background voice listener engaged.

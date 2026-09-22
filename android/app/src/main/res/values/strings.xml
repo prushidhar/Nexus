@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Nexus</string>
+    <string name="accessibility_service_label">Nexus Assist (Screen Intelligence &amp; Actions)</string>
+    <string name="notification_listener_label">Nexus Notification Intelligence</string>
+</resources>

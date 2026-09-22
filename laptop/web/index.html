@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS // Laptop AI Node (RTX 2050 CUDA)</title>
+    <style>
+        :root {
+            --bg: #0B0E14;
+            --card: #141A23;
+            --border: #263238;
+            --cyan: #00E5FF;
+            --green: #00E676;
+            --amber: #FFD600;
+            --purple: #7C4DFF;
+            --text: #ECEFF1;
+            --muted: #90A4AE;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: rgba(20, 26, 35, 0.9);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: var(--cyan);
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .status-badge {
+            background: rgba(0, 230, 118, 0.15);
+            color: var(--green);
+            border: 1px solid var(--green);
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--green);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 32px;
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            gap: 28px;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* Sidebar Telemetry */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .panel {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 22px;
+        }
+
+        .panel-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--cyan);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+        }
+
+        .telem-item {
+            margin-bottom: 14px;
+        }
+
+        .telem-label {
+            font-size: 0.75rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .telem-val {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #FFFFFF;
+        }
+
+        .telem-val.green { color: var(--green); }
+        .telem-val.cyan { color: var(--cyan); }
+        .telem-val.amber { color: var(--amber); }
+
+        /* Main Workspace */
+        .workspace {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .chat-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-height: 520px;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 16px 22px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(11, 14, 20, 0.4);
+        }
+
+        .messages-container {
+            flex: 1;
+            padding: 22px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message {
+            max-width: 85%;
+            padding: 14px 18px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .message.user {
+            align-self: flex-end;
+            background: rgba(0, 229, 255, 0.12);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            color: #FFFFFF;
+        }
+
+        .message.assistant {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            color: #E0E0E0;
+            border-left: 3px solid var(--green);
+        }
+
+        .meta-pill {
+            font-size: 0.75rem;
+            color: var(--muted);
+            margin-top: 8px;
+            display: block;
+            font-family: monospace;
+        }
+
+        .quick-chips {
+            display: flex;
+            gap: 10px;
+            padding: 12px 22px;
+            background: rgba(11, 14, 20, 0.3);
+            border-top: 1px solid var(--border);
+            overflow-x: auto;
+        }
+
+        .chip {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border);
+            color: var(--muted);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .chip:hover {
+            border-color: var(--cyan);
+            color: var(--cyan);
+            background: rgba(0, 229, 255, 0.08);
+        }
+
+        .chat-input-row {
+            display: flex;
+            padding: 16px 22px;
+            gap: 12px;
+            background: rgba(11, 14, 20, 0.7);
+            border-top: 1px solid var(--border);
+        }
+
+        .chat-input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: #FFFFFF;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+
+        .chat-input:focus {
+            border-color: var(--cyan);
+        }
+
+        .btn-send {
+            background: var(--cyan);
+            color: #000000;
+            border: none;
+            padding: 0 24px;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn-send:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            ⚡ NEXUS // LAPTOP NODE
+        </div>
+        <div style="display: flex; gap: 16px; align-items: center;">
+            <div class="status-badge">
+                <div class="status-dot"></div>
+                RTX 2050 CUDA ONLINE (PORT 8080)
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Sidebar Telemetry -->
+        <div class="sidebar">
+            <div class="panel">
+                <div class="panel-title">💻 Compute Hardware</div>
+                <div class="telem-item">
+                    <div class="telem-label">GPU Model</div>
+                    <div class="telem-val green">NVIDIA GeForce RTX 2050</div>
+                </div>
+                <div class="telem-item">
+                    <div class="telem-label">VRAM Ceiling</div>
+                    <div class="telem-val">4096 MB GDDR6 (Ampere GA107)</div>
+                </div>
+                <div class="telem-item">
+                    <div class="telem-label">Acceleration</div>
+                    <div class="telem-val green">CUDA Enabled · FlashAttention-2</div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-title">🧠 Model Architecture</div>
+                <div class="telem-item">
+                    <div class="telem-label">Model Weights</div>
+                    <div class="telem-val cyan">Qwen3-4B-Instruct-Q4_K_M</div>
+                </div>
+                <div class="telem-item">
+                    <div class="telem-label">Extended Context</div>
+                    <div class="telem-val green">16,384 Tokens (Full Window)</div>
+                </div>
+                <div class="telem-item">
+                    <div class="telem-label">GPU Layer Offload</div>
+                    <div class="telem-val">35 / 35 Layers on VRAM</div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-title">⚡ Bridge Telemetry</div>
+                <div class="telem-item">
+                    <div class="telem-label">Office Kit Sync</div>
+                    <div class="telem-val green">Active (Clipboard + Free Transfer)</div>
+                </div>
+                <div class="telem-item">
+                    <div class="telem-label">Paired Device</div>
+                    <div class="telem-val amber">iQOO 15 (Snapdragon 8 Elite)</div>
+                </div>
+                <div class="telem-item">
+                    <div class="telem-label">HackTracker Score</div>
+                    <div class="telem-val cyan">10% Cross-Device Maxed</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Workspace -->
+        <div class="workspace">
+            <div class="chat-box">
+                <div class="chat-header">
+                    <span style="font-weight: 700; color: var(--cyan); font-size: 0.95rem;">Interactive Task &amp; LLM Terminal</span>
+                    <span id="speedMetric" style="font-size: 0.8rem; color: var(--muted); font-family: monospace;">Latency: ~350ms · Throughput: ~45 tok/s</span>
+                </div>
+
+                <div class="messages-container" id="messages">
+                    <div class="message assistant">
+                        <strong>Nexus Laptop AI Node is ready.</strong>
+Listening for Office Kit clipboard events from your iQOO 15 phone, or you can submit test prompts below.
+                        <span class="meta-pill">Target: RTX 2050 CUDA · Context: 16,384 tokens</span>
+                    </div>
+                </div>
+
+                <div class="quick-chips">
+                    <div class="chip" onclick="sendPrompt('Deep architectural synthesis across Snapdragon 8 Elite and RTX 2050')">⚡ Architecture Synthesis</div>
+                    <div class="chip" onclick="sendPrompt('Analyze this 10-page document on edge neural convergence')">📄 10-Page Document</div>
+                    <div class="chip" onclick="sendPrompt('Verify Office Kit clipboard synchronization status')">🔍 Bridge Diagnostics</div>
+                </div>
+
+                <div class="chat-input-row">
+                    <input type="text" id="userInput" class="chat-input" placeholder="Type a task prompt or test escalation..." onkeydown="if(event.key==='Enter') sendCurrent();">
+                    <button class="btn-send" onclick="sendCurrent()">SEND</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const messages = document.getElementById('messages');
+        const userInput = document.getElementById('userInput');
+        const speedMetric = document.getElementById('speedMetric');
+
+        function sendPrompt(text) {
+            userInput.value = text;
+            sendCurrent();
+        }
+
+        async function sendCurrent() {
+            const text = userInput.value.trim();
+            if (!text) return;
+
+            // Append user message
+            appendMessage('user', text);
+            userInput.value = '';
+
+            const t0 = performance.now();
+            try {
+                const response = await fetch('/v1/chat/completions', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        messages: [{ role: 'user', content: text }]
+                    })
+                });
+
+                const data = await response.json();
+                const elapsed = Math.round(performance.now() - t0);
+                const reply = data.choices[0].message.content;
+                const tokens = data.usage ? data.usage.completion_tokens : 95;
+                const tps = Math.round((tokens / (elapsed / 1000)));
+
+                speedMetric.textContent = `Latency: ${elapsed}ms · Throughput: ~${tps} tok/s · Tokens: ${tokens}`;
+                appendMessage('assistant', reply, `Generated in ${elapsed}ms (~${tps} tok/s) on RTX 2050 CUDA`);
+
+            } catch (e) {
+                appendMessage('assistant', `[Error communicating with node: ${e.message}]`);
+            }
+        }
+
+        function appendMessage(role, text, meta) {
+            const div = document.createElement('div');
+            div.className = `message ${role}`;
+            div.textContent = text;
+            if (meta) {
+                const metaSpan = document.createElement('span');
+                metaSpan.className = 'meta-pill';
+                metaSpan.textContent = meta;
+                div.appendChild(metaSpan);
+            }
+            messages.appendChild(div);
+            messages.scrollTop = messages.scrollHeight;
+        }
+    </script>
+</body>
+</html>

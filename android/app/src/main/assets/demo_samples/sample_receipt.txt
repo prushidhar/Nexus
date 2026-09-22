@@ -1,0 +1,26 @@
+=======================================================
+               CAFE COFFEE DAY - HYDERABAD
+               Cyber Towers, Hitec City, Hyderabad
+                   GSTIN: 36AAAAA0000A1Z5
+=======================================================
+Date: 26-Sep-2026 14:32              Bill No: CCD-98421
+Server: Rahul K                      Table: 04 (Indoor)
+=======================================================
+ITEM                         QTY    RATE       AMOUNT
+-------------------------------------------------------
+Cappuccino (Large)            2    240.00      480.00
+Hazelnut Cold Coffee          1    290.00      290.00
+Paneer Tikka Sandwich         2    220.00      440.00
+Choco Chip Cookie (Pack)      1    150.00      150.00
+-------------------------------------------------------
+SUBTOTAL:                                     1,360.00
+CGST @ 2.5%:                                     34.00
+SGST @ 2.5%:                                     34.00
+Service Charge (5%):                             68.00
+=======================================================
+TOTAL PAYABLE:                               INR 1,496.00
+=======================================================
+Payment Method: UPI (GPay / PhonePe)
+Transaction Ref: UPI/62678192019/SUCCESS
+Thank you for visiting! Have a wonderful day.
+=======================================================
