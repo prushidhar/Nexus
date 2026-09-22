@@ -1,1 +1,41 @@
 2026-09-23 00:39:00,000 [INFO] NexusDaemon: Nexus initialized cleanly.
+2026-09-23 00:41:09,970 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-23 00:41:10,029 [INFO] NexusBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-23 00:41:10,456 [INFO] NexusBrain: Local GGUF LLM engine loaded successfully.
+2026-09-23 00:41:10,656 [INFO] NexusVoice: Selected Windows Primary DirectSound Capture: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:41:10,656 [INFO] NexusDaemon: Nexus initialized on microphone: [6] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:41:10,658 [INFO] NexusDaemon: Nexus daemon started with PID 23328
+2026-09-23 00:41:11,461 [INFO] ClickyBridge: Launching Clicky companion overlay...
+2026-09-23 00:41:11,980 [INFO] ClickyBridge: Clicky overlay ready on ws://127.0.0.1:9876
+2026-09-23 00:41:11,980 [INFO] OfficeKit: Office Kit Bridge started — monitoring clipboard + Free Transfer folders.
+2026-09-23 00:41:11,980 [INFO] NexusDaemon: Vivo Office Kit Bridge fully wired and running.
+2026-09-23 00:41:11,980 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-23 00:41:12,084 [INFO] NexusDaemon: Low-level OS keyboard hooks engaged for Windows+Alt, Alt+Space, Ctrl+Shift+Space.
+2026-09-23 00:41:12,084 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-23 00:41:12,085 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-23 00:41:12,095 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-23 00:41:12,169 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-23 00:41:12,169 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-23 00:41:18,871 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [6] Primary Sound Capture Driver, 2ch)...
+2026-09-23 00:41:18,871 [INFO] NexusDaemon: Calibration complete: Ambient Noise=750.0, Speech Threshold=937.5
+2026-09-23 00:41:18,871 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-23 00:45:51,769 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-23 00:45:51,878 [INFO] NexusBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-23 00:45:52,479 [INFO] NexusBrain: Local GGUF LLM engine loaded successfully.
+2026-09-23 00:45:52,919 [INFO] NexusVoice: Selected Windows Primary DirectSound Capture: [4] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:45:52,919 [INFO] NexusDaemon: Nexus initialized on microphone: [4] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:45:52,921 [INFO] NexusDaemon: Nexus daemon started with PID 17764
+2026-09-23 00:45:53,728 [INFO] ClickyBridge: Launching Clicky companion overlay...
+2026-09-23 00:45:54,248 [INFO] ClickyBridge: Clicky overlay ready on ws://127.0.0.1:9876
+2026-09-23 00:45:54,248 [INFO] OfficeKit: Office Kit Bridge started — monitoring clipboard + Free Transfer folders.
+2026-09-23 00:45:54,249 [INFO] NexusDaemon: Vivo Office Kit Bridge fully wired and running.
+2026-09-23 00:45:54,249 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-23 00:45:54,333 [INFO] NexusDaemon: Low-level OS keyboard hooks engaged for Windows+Alt, Alt+Space, Ctrl+Shift+Space.
+2026-09-23 00:45:54,333 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-23 00:45:54,335 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-23 00:45:54,365 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-23 00:45:54,419 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-23 00:45:54,419 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-23 00:46:01,922 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [4] Primary Sound Capture Driver, 2ch)...
+2026-09-23 00:46:01,924 [INFO] NexusDaemon: Calibration complete: Ambient Noise=750.0, Speech Threshold=937.5
+2026-09-23 00:46:01,924 [INFO] NexusDaemon: Unified background voice listener engaged.

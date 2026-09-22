@@ -67,14 +67,12 @@ def get_best_audio_input() -> Tuple[int, int, str]:
                 rms_vals = []
                 for _ in range(3):
                     raw = stream.read(1024, exception_on_overflow=False)
-                    if channels == 2:
-                        mono = audioop.tomono(raw, 2, 0.5, 0.5)
-                    else:
-                        mono = raw
+                    mono = audioop.tomono(raw, 2, 0.5, 0.5) if channels == 2 else raw
                     rms_vals.append(audioop.rms(mono, 2))
                 stream.stop_stream()
                 stream.close()
-                if rms_vals and (sum(rms_vals) / len(rms_vals)) > 5:
+                ints = [int.from_bytes(mono[j:j+2], 'little', signed=True) for j in range(0, min(len(mono), 256), 2)]
+                if len(set(ints)) > 4 and rms_vals and (sum(rms_vals) / len(rms_vals)) > 5:
                     logger.info(f"Selected Windows Primary DirectSound Capture: [{i}] {info.get('name')} @ {rate}Hz")
                     p.terminate()
                     return i, rate, info.get("name", "Primary Sound Capture Driver")
@@ -115,7 +113,9 @@ def get_best_audio_input() -> Tuple[int, int, str]:
 
                 avg_rms = sum(rms_vals) / max(len(rms_vals), 1)
                 score = avg_rms + (200 if is_ds else 0)
-                if score > best_score and avg_rms > 5:
+                ints = [int.from_bytes(mono[j:j+2], 'little', signed=True) for j in range(0, min(len(mono), 256), 2)]
+                distinct_samples = len(set(ints))
+                if distinct_samples > 4 and score > best_score and avg_rms > 5:
                     best_score = score
                     best_index = i
                     best_rate = rate
