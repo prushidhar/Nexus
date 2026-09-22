@@ -171,3 +171,5 @@ websockets.exceptions.ConnectionClosedError: sent 1011 (internal error) keepaliv
 2026-09-23 01:00:01,571 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [4] Primary Sound Capture Driver, 2ch)...
 2026-09-23 01:00:01,571 [INFO] NexusDaemon: Calibration complete: Ambient Noise=537.0, Speech Threshold=671.2
 2026-09-23 01:00:01,571 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-23 01:00:57,977 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-23 01:00:57,982 [INFO] NexusDaemon: Dictation timeout: 'NexusBackgroundDaemon' object has no attribute 'dev_index'

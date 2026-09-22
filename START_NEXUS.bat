@@ -11,13 +11,13 @@ echo.
 
 :: 1. Start Clicky HUD Overlay in its own window
 echo [1/2] Launching Clicky Visual HUD...
-start "Nexus HUD (Clicky)" cmd /k "title Nexus HUD && cd /d C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\repos\clicky-windows && npx.cmd electron . --disable-gpu --disable-gpu-compositing --no-sandbox"
+start "Nexus HUD" cmd /k cd /d "C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\repos\clicky-windows" ^&^& npx.cmd electron . --disable-gpu --disable-gpu-compositing --no-sandbox
 
 timeout /t 3 /nobreak >nul
 
 :: 2. Start Core Voice Daemon in its own window
 echo [2/2] Launching Nexus Voice Daemon...
-start "Nexus Voice Daemon" cmd /k "title Nexus Voice Daemon && cd /d C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent && "C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\python.exe" -u laptop\nexus_daemon.py"
+start "Nexus Voice Daemon" cmd /k cd /d "C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent" ^&^& "C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\python.exe" -u laptop\nexus_daemon.py
 
 echo.
 echo ===============================================================================
