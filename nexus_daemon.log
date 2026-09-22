@@ -39,3 +39,117 @@
 2026-09-23 00:46:01,922 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [4] Primary Sound Capture Driver, 2ch)...
 2026-09-23 00:46:01,924 [INFO] NexusDaemon: Calibration complete: Ambient Noise=750.0, Speech Threshold=937.5
 2026-09-23 00:46:01,924 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-23 00:49:42,624 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-23 00:49:42,798 [INFO] NexusBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-23 00:49:43,392 [INFO] NexusBrain: Local GGUF LLM engine loaded successfully.
+2026-09-23 00:49:43,968 [INFO] NexusVoice: Selected Windows Primary DirectSound Capture: [4] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:49:43,968 [INFO] NexusDaemon: Nexus initialized on microphone: [4] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:49:43,968 [INFO] NexusDaemon: Nexus daemon started with PID 3864
+2026-09-23 00:49:44,778 [INFO] ClickyBridge: Launching Clicky companion overlay...
+2026-09-23 00:49:45,842 [INFO] ClickyBridge: Clicky overlay ready on ws://127.0.0.1:9876
+2026-09-23 00:49:45,843 [INFO] OfficeKit: Office Kit Bridge started — monitoring clipboard + Free Transfer folders.
+2026-09-23 00:49:45,843 [INFO] NexusDaemon: Vivo Office Kit Bridge fully wired and running.
+2026-09-23 00:49:45,843 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-23 00:49:45,994 [INFO] NexusDaemon: Low-level OS keyboard hooks engaged for Windows+Alt, Alt+Space, Ctrl+Shift+Space.
+2026-09-23 00:49:45,994 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-23 00:49:45,995 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-23 00:49:46,003 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-23 00:49:46,105 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-23 00:49:46,105 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-23 00:49:53,817 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [4] Primary Sound Capture Driver, 2ch)...
+2026-09-23 00:49:53,817 [INFO] NexusDaemon: Calibration complete: Ambient Noise=50.0, Speech Threshold=450.0
+2026-09-23 00:49:53,817 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-23 00:50:07,930 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-23 00:50:08,002 [INFO] NexusBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-23 00:50:08,532 [INFO] NexusBrain: Local GGUF LLM engine loaded successfully.
+2026-09-23 00:50:09,133 [INFO] NexusDaemon: Nexus initialized on microphone: [1] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-23 00:50:09,134 [INFO] NexusDaemon: Nexus daemon is already running (PID 3864). Expanding Notch HUD and exiting duplicate.
+2026-09-23 00:50:10,848 [INFO] NexusDaemon: [HOTKEY DOUBLE-TAP DETECTED] Activating Hands-Free Dictation Mode!
+2026-09-23 00:50:10,850 [INFO] NexusDaemon: [ONE-SHOT COMMAND]: 'start dictation'
+2026-09-23 00:50:10,851 [INFO] NexusTools: Launching application: dictation -> dictation
+2026-09-23 00:50:24,291 [INFO] NexusDaemon: [CLICKY UI USER QUERY]: open calculator
+2026-09-23 00:50:24,296 [INFO] NexusDaemon: [ONE-SHOT COMMAND]: 'open calculator'
+2026-09-23 00:50:24,297 [INFO] NexusTools: Launching application: calculator -> calc.exe
+2026-09-23 00:50:30,523 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:50:30,526 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:50:41,411 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:50:41,413 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:50:46,886 [INFO] NexusDaemon: [CLICKY UI SWITCH PERSONA]: coder
+2026-09-23 00:50:46,887 [INFO] NexusPersonas: Switched persona to: Coder (Senior Software Engineer)
+2026-09-23 00:50:49,828 [INFO] NexusDaemon: [CLICKY UI SWITCH PERSONA]: teacher
+2026-09-23 00:50:49,829 [INFO] NexusPersonas: Switched persona to: Teacher (Visual UI Walkthrough Guide)
+2026-09-23 00:50:53,867 [INFO] NexusDaemon: [CLICKY UI SWITCH PERSONA]: researcher
+2026-09-23 00:50:53,867 [INFO] NexusPersonas: Switched persona to: Researcher (Deep Knowledge Analyst)
+2026-09-23 00:50:57,304 [INFO] NexusDaemon: [CLICKY UI SWITCH PERSONA]: coder
+2026-09-23 00:50:57,304 [INFO] NexusPersonas: Switched persona to: Coder (Senior Software Engineer)
+2026-09-23 00:51:00,366 [INFO] NexusDaemon: [CLICKY UI SWITCH PERSONA]: nexus
+2026-09-23 00:51:00,366 [INFO] NexusPersonas: Switched persona to: Nexus (Executive Desktop Companion)
+2026-09-23 00:51:07,955 [INFO] NexusDaemon: [CLICKY UI SWITCH PERSONA]: nexus
+2026-09-23 00:51:07,955 [INFO] NexusPersonas: Switched persona to: Nexus (Executive Desktop Companion)
+2026-09-23 00:51:11,349 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:51:11,351 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:51:16,866 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:51:16,868 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:51:22,314 [INFO] NexusDaemon: [CLICKY UI USER QUERY]: open whatsapp
+2026-09-23 00:51:22,315 [INFO] NexusDaemon: [ONE-SHOT COMMAND]: 'open whatsapp'
+2026-09-23 00:51:22,316 [INFO] NexusTools: Launching application: whatsapp -> whatsapp
+2026-09-23 00:52:46,233 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: run_routine:morning_briefing
+2026-09-23 00:52:46,237 [INFO] NexusDaemon: [CLICKY UI RUN ROUTINE]: morning_briefing
+2026-09-23 00:52:50,050 [INFO] NexusRoutines: Triggering routine: morning_briefing (Catchup: False)
+2026-09-23 00:52:50,051 [INFO] NexusRoutines: [Flow: MorningBriefingFlow] Starting execution...
+2026-09-23 00:52:50,933 [INFO] NexusRoutines: Morning Briefing Executed: Good morning. It is Wednesday, September 23, 12:52 AM. System battery is at 100%, CPU load is 31.5 percent. In your workspace: nexus-agent: 2 uncommitted files, repos/clicky-windows: 5 uncommitted files.
+2026-09-23 00:52:50,936 [INFO] NexusRoutines: [Flow: MorningBriefingFlow] Completed successfully in 0.89s
+2026-09-23 00:53:11,810 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: run_routine:cache_hygiene
+2026-09-23 00:53:11,820 [INFO] NexusDaemon: [CLICKY UI RUN ROUTINE]: cache_hygiene
+2026-09-23 00:53:15,380 [INFO] NexusRoutines: Triggering routine: cache_hygiene (Catchup: False)
+2026-09-23 00:53:15,386 [INFO] NexusRoutines: [Flow: WorkspaceHygieneFlow] Starting execution...
+2026-09-23 00:53:37,310 [ERROR] websockets.client: keepalive ping failed
+TimeoutError: timed out while closing connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\websockets\sync\connection.py", line 799, in keepalive
+    with self.send_context():
+  File "contextlib.py", line 144, in __exit__
+  File "C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\websockets\sync\connection.py", line 1048, in send_context
+    raise self.protocol.close_exc from original_exc
+websockets.exceptions.ConnectionClosedError: sent 1011 (internal error) keepalive ping timeout; no close frame received
+2026-09-23 00:55:32,532 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-23 00:55:32,711 [INFO] NexusBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-23 00:55:33,354 [INFO] NexusBrain: Local GGUF LLM engine loaded successfully.
+2026-09-23 00:55:35,773 [INFO] NexusDaemon: Nexus initialized on microphone: [1] Microphone Array (Realtek(R) Au @ 44100Hz
+2026-09-23 00:55:35,781 [INFO] NexusDaemon: Nexus daemon started with PID 20428
+2026-09-23 00:55:36,585 [INFO] ClickyBridge: Launching Clicky companion overlay...
+2026-09-23 00:55:37,629 [INFO] ClickyBridge: Clicky overlay ready on ws://127.0.0.1:9876
+2026-09-23 00:55:37,629 [INFO] OfficeKit: Office Kit Bridge started — monitoring clipboard + Free Transfer folders.
+2026-09-23 00:55:37,629 [INFO] NexusDaemon: Vivo Office Kit Bridge fully wired and running.
+2026-09-23 00:55:37,629 [INFO] NexusDaemon: Initializing Windows + Alt global hotkey listener...
+2026-09-23 00:55:37,875 [INFO] NexusDaemon: Low-level OS keyboard hooks engaged for Windows+Alt, Alt+Space, Ctrl+Shift+Space.
+2026-09-23 00:55:37,876 [INFO] NexusDaemon: Physical hardware GetAsyncKeyState poller engaged for Windows + Alt.
+2026-09-23 00:55:37,877 [INFO] NexusRoutines: Routine automation scheduler thread running.
+2026-09-23 00:55:37,892 [INFO] ClickyBridge: Connected to Clicky WebSocket incoming stream.
+2026-09-23 00:55:38,048 [INFO] comtypes.client._code_cache: Imported existing <module 'comtypes.gen' from 'C:\\Users\\P RUSHIDHAR\\.gemini\\antigravity\\scratch\\runtime\\python\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-09-23 00:55:38,048 [INFO] comtypes.client._code_cache: Using writeable comtypes cache directory: 'C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\runtime\python\Lib\site-packages\comtypes\gen'
+2026-09-23 00:55:43,198 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:55:43,198 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:55:46,227 [INFO] NexusDaemon: Calibrating ambient noise floor on live stream (device [1] Microphone Array (Realtek(R) Au, 2ch)...
+2026-09-23 00:55:46,808 [INFO] NexusDaemon: Calibration complete: Ambient Noise=50.0, Speech Threshold=450.0
+2026-09-23 00:55:46,808 [INFO] NexusDaemon: Unified background voice listener engaged.
+2026-09-23 00:55:56,665 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:55:56,665 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:56:03,480 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:56:03,482 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:56:10,591 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: dictate
+2026-09-23 00:56:10,591 [INFO] NexusDaemon: [ONE-SHOT COMMAND]: 'start dictation'
+2026-09-23 00:56:10,592 [INFO] NexusTools: Launching application: dictation -> dictation
+2026-09-23 00:56:13,995 [INFO] NexusDaemon: [CLICKY UI ACTION TRIGGERED]: talk
+2026-09-23 00:56:13,996 [INFO] NexusDaemon: [WAKE WORD ONLY TRIGGERED] Expanding Notch HUD and standing by for follow-up.
+2026-09-23 00:56:21,572 [INFO] NexusDaemon: [CLICKY UI SWITCH PERSONA]: nexus
+2026-09-23 00:56:21,573 [INFO] NexusPersonas: Switched persona to: Nexus (Executive Desktop Companion)
+2026-09-23 00:56:32,058 [INFO] NexusRoutines: Loaded 3 routines from C:\Users\P RUSHIDHAR\.gemini\antigravity\scratch\nexus-agent\data\routines.json
+2026-09-23 00:56:32,235 [INFO] NexusBrain: Loading GGUF model into Llama engine: qwen2.5-0.5b-instruct-q4_k_m.gguf...
+2026-09-23 00:56:32,839 [INFO] NexusBrain: Local GGUF LLM engine loaded successfully.
+2026-09-23 00:56:32,944 [INFO] NexusVoice: Selected Windows Primary DirectSound Capture: [4] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:56:32,947 [INFO] NexusDaemon: Nexus initialized on microphone: [4] Primary Sound Capture Driver @ 44100Hz
+2026-09-23 00:56:32,956 [INFO] NexusDaemon: Nexus daemon is already running (PID 20428). Expanding Notch HUD and exiting duplicate.
